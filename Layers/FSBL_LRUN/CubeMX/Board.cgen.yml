@@ -26,11 +26,13 @@ generator-import:
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_tim.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_tim_ex.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c
-        - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c
-        - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_eth.c
+        - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_eth_ex.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c
+        - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c
+        - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c
         - file: ./STM32CubeMX/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c

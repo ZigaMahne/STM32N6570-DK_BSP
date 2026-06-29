@@ -104,6 +104,20 @@ LR_IROM1 0x70100400 0x001DFC00  {    ; load region size_region
    .ANY (.noncacheable)
   }
   
+    RW_RxDecripSection 0x34094000 0xC0  {
+   *(.RxDecripSection)
+  }
+
+  RW_TxDecripSection 0x340940C0 0xC0  {
+   *(.TxDecripSection)
+  }
+
+  RW_ETH_RX_BUF  0x34094200 0x00002000 {
+    *(.driver.eth_mac0_rx_buf)
+  }
+  RW_ETH_TX_BUF  0x34096200 0x00002000 {
+    *(.driver.eth_mac0_tx_buf)
+  }
   
   ARM_LIB_STACK __STACK_TOP EMPTY -__STACK_SIZE {   ; Reserve empty region for stack
   }  

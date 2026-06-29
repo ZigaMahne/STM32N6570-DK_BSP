@@ -16,6 +16,7 @@ The **STMicroelectronics STM32N6570-DK Board Support Pack (BSP)**:
 
 | Provided API Interface        | Description
 |:------------------------------|:------------------------------------------------------------------------------
+| CMSIS_ETH                     | CMSIS-Driver Ethernet connected to Ethernet RJ45 connector (CN11)
 | CMSIS_USB_Device              | CMSIS-Driver USB Device connected to USB_OTG_HS connector (CN14)
 | CMSIS_VIO                     | CMSIS-Driver VIO connected to LEDs (LD2, LD1) and USER button (B2)
 | STDIN, STDOUT, STDERR         | Standard I/O connected to Virtual COM port on ST-LINK connector (CN14)
@@ -25,6 +26,7 @@ The **STMicroelectronics STM32N6570-DK Board Support Pack (BSP)**:
 
 | Provided API Interface        | Description
 |:------------------------------|:------------------------------------------------------------------------------
+| CMSIS_ETH                     | CMSIS-Driver Ethernet connected to Ethernet RJ45 connector (CN11)
 | CMSIS_USB_Device              | CMSIS-Driver USB Device connected to USB_OTG_HS connector (CN14)
 | CMSIS_VIO                     | CMSIS-Driver VIO connected to LEDs (LD2, LD1) and USER button (B2)
 | STDIN, STDOUT, STDERR         | Standard I/O connected to Virtual COM port on ST-LINK connector (CN14)
@@ -34,6 +36,7 @@ The **STMicroelectronics STM32N6570-DK Board Support Pack (BSP)**:
 
 | Provided API Interface        | Description
 |:------------------------------|:------------------------------------------------------------------------------
+| CMSIS_ETH                     | CMSIS-Driver Ethernet connected to Ethernet RJ45 connector (CN11)
 | CMSIS_USB_Device              | CMSIS-Driver USB Device connected to USB_OTG_HS connector (CN14)
 | CMSIS_VIO                     | CMSIS-Driver VIO connected to LEDs (LD2, LD1) and USER button (B2)
 | STDIN, STDOUT, STDERR         | Standard I/O connected to Virtual COM port on ST-LINK connector (CN14)
