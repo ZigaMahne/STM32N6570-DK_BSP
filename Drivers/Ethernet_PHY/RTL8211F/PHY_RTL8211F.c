@@ -1,14 +1,3 @@
-/******************************************************************************
- * @file     PHY_RTL8211F.c
- * @brief    CMSIS Ethernet PHY Driver for Realtek RTL8211F-CG
- * @version  V1.0.0
- * @date     29. June 2026
- *
- * @note     Register map, bit definitions and initialization sequence are
- *           taken from the STMicroelectronics "stm32-rtl8211" component
- *           driver (rtl8211.c / rtl8211.h). Only the CMSIS ARM_DRIVER_ETH_PHY
- *           API is exposed.
- ******************************************************************************/
 /*
  * Copyright (c) 2026 Arm Limited. All rights reserved.
  *
@@ -25,18 +14,39 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * -----------------------------------------------------------------------
+ *
+ * $Date:        29. June 2026
+ * $Revision:    V1.0
+ *
+ * Driver:       Driver_ETH_PHYn (default: Driver_ETH_PHY0)
+ * Project:      Ethernet Physical Layer Transceiver (PHY)
+ *               Driver for PHY_RTL8211F
+ * -----------------------------------------------------------------------
+ * Use the following configuration settings in the middleware component
+ * to connect to this driver.
+ *
+ *   Configuration Setting                     Value
+ *   ---------------------                     -----
+ *   Connect to hardware via Driver_ETH_PHY# = n (default: 0)
+ * -------------------------------------------------------------------- */
+
+/* History:
+ *  Version 1.0
+ *    Initial release
  */
 
 #include "PHY_RTL8211F.h"
 
-#define ARM_ETH_PHY_DRV_VERSION ARM_DRIVER_VERSION_MAJOR_MINOR(2,0)
+#define ARM_ETH_PHY_DRV_VERSION ARM_DRIVER_VERSION_MAJOR_MINOR(1,0)
 
 #ifndef ETH_PHY_NUM
 #define ETH_PHY_NUM             0       /* Default driver number             */
 #endif
 
 #ifndef ETH_PHY_ADDR
-#define ETH_PHY_ADDR            0x01U   /* Default PHY device address        */
+#define ETH_PHY_ADDR            0x01    /* Default PHY device address        */
 #endif
 
 /* Driver Version */

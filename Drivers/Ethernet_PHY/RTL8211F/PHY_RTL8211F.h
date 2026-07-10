@@ -1,14 +1,3 @@
-/******************************************************************************
- * @file     PHY_RTL8211F.h
- * @brief    CMSIS Ethernet PHY Driver definitions for Realtek RTL8211F-CG
- * @version  12.0.0
- * @date     29. June 2026
- *
- * @note     Register map, bit definitions and initialization sequence are
- *           taken from the STMicroelectronics "stm32-rtl8211" component
- *           driver (rtl8211.c / rtl8211.h). Only the CMSIS ARM_DRIVER_ETH_PHY
- *           API is exposed.
- ******************************************************************************/
 /*
  * Copyright (c) 2026 Arm Limited. All rights reserved.
  *
@@ -25,7 +14,15 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *
+ * -----------------------------------------------------------------------
+ *
+ * $Date:        29. June 2026
+ * $Revision:    V1.0
+ *
+ * Project:      Ethernet Physical Layer Transceiver (PHY)
+ *               Definitions for TL8211F-CG
+ * -------------------------------------------------------------------- */
 
 #ifndef __PHY_RTL8211F_H
 #define __PHY_RTL8211F_H
