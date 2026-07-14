@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Checkout .ci folder
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           sparse-checkout: |
             .ci
@@ -43,12 +43,12 @@ jobs:
         uses: ARM-software/cmsis-actions/armlm@v1
 
       - name: Checkout current repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: ./BSP
 
       - name: Checkout STM32N6xx_DFP
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: Open-CMSIS-Pack/STM32N6xx_DFP
           path: ./DFP
@@ -113,7 +113,7 @@ jobs:
 
       - name: Upload Artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.test.artifact }}_${{ matrix.test.tool }}
           path: |
