@@ -54,7 +54,7 @@ jobs:
           path: ./DFP
 
       - name: Checkout CMSIS-Driver_STM32
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: Open-CMSIS-Pack/CMSIS-Driver_STM32
           path: ./Drivers
