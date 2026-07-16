@@ -24,6 +24,8 @@ Refer to ["Configure STM32 Devices with CubeMX"](https://open-cmsis-pack.github.
 
 | CMSIS-Driver          | Peripheral            | Board connector/component                     | Connection
 |:----------------------|:----------------------|:----------------------------------------------|:------------------------------
+| Driver_ETH_MAC0       | ETH                   | Ethernet RJ45 connector (CN11)                | CMSIS_ETH
+| Driver_ETH_PHY0       | RTL8211F (external)   | Ethernet RJ45 connector (CN11)                | CMSIS_ETH
 | Driver_USART1         | USART1                | ST-LINK connector (CN14)                      | STDIN, STDOUT, STDERR
 | Driver_USBD0          | USB_OTG_HS            | USB_OTG_HS connector (CN18)                   | CMSIS_USB_Device
 | Driver_vStreamAudioIn | MDF (DMA)             | On-board digital microphone (MIC)             | CMSIS_VSTREAM_AUDIO_IN

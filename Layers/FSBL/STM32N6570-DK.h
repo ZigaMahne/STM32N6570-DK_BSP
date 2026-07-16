@@ -21,11 +21,14 @@
 #define STM32N6570_DK_H_
 
 #include "GPIO_STM32.h"
+#include "Driver_ETH_MAC.h"
+#include "Driver_ETH_PHY.h"
 #include "Driver_USART.h"
 #include "Driver_USBD.h"
 #include "cmsis_vstream.h"
 
 // CMSIS Driver instances of Board peripherals
+#define CMSIS_DRIVER_ETH     0          // Driver_ETH_MAC0
 #define CMSIS_DRIVER_USBD    0          // Driver_USBD0
 #define CMSIS_DRIVER_USBD_HS 1          // CMSIS Driver USB Device high-speed support
 
@@ -33,6 +36,8 @@
 #define RETARGET_STDIO_UART  1
 
 // CMSIS Drivers
+extern ARM_DRIVER_ETH_MAC   ARM_Driver_ETH_MAC_(CMSIS_DRIVER_ETH);      // ETH MAC
+extern ARM_DRIVER_ETH_PHY   ARM_Driver_ETH_PHY_(CMSIS_DRIVER_ETH);      // ETH PHY
 extern ARM_DRIVER_USART     ARM_Driver_USART_(RETARGET_STDIO_UART);     // ST-LINK
 extern ARM_DRIVER_USBD      ARM_Driver_USBD_(CMSIS_DRIVER_USBD);        // USB Device
 extern vStreamDriver_t      Driver_vStreamAudioIn;                      // vStream Audio In
