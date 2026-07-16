@@ -96,6 +96,8 @@ extern int app_main     (void);
 #define VCP_RX_GPIO_Port GPIOE
 #define ARDUINO_TX_D1_Pin GPIO_PIN_5
 #define ARDUINO_TX_D1_GPIO_Port GPIOD
+#define ETH_MDINT_Pin GPIO_PIN_3
+#define ETH_MDINT_GPIO_Port GPIOD
 #define SAI1_FS_A_Pin GPIO_PIN_0
 #define SAI1_FS_A_GPIO_Port GPIOB
 #define SAI1_SD_A_Pin GPIO_PIN_7
@@ -112,6 +114,20 @@ extern int app_main     (void);
 #define SAI1_MCLK_A_GPIO_Port GPIOG
 #define ARDUINO_RX_D0_Pin GPIO_PIN_6
 #define ARDUINO_RX_D0_GPIO_Port GPIOF
+#define ETH_CLK_Pin GPIO_PIN_5
+#define ETH_CLK_GPIO_Port GPIOF
+#define ETH_RXD2_Pin GPIO_PIN_8
+#define ETH_RXD2_GPIO_Port GPIOF
+#define ETH_CLK125_Pin GPIO_PIN_2
+#define ETH_CLK125_GPIO_Port GPIOF
+#define ETH_RXD3_Pin GPIO_PIN_9
+#define ETH_RXD3_GPIO_Port GPIOF
+#define ETH_TXD3_Pin GPIO_PIN_4
+#define ETH_TXD3_GPIO_Port GPIOG
+#define ETH_TX2_Pin GPIO_PIN_3
+#define ETH_TX2_GPIO_Port GPIOG
+#define ETH_GTX_CLK_Pin GPIO_PIN_0
+#define ETH_GTX_CLK_GPIO_Port GPIOF
 
 /* USER CODE BEGIN Private defines */
 

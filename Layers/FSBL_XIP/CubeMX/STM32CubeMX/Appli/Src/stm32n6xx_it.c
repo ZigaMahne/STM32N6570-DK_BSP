@@ -56,6 +56,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern ETH_HandleTypeDef heth1;
 extern DMA_NodeTypeDef Node_GPDMA1_Channel6;
 extern DMA_QListTypeDef List_GPDMA1_Channel6;
 extern DMA_HandleTypeDef handle_GPDMA1_Channel6;
@@ -246,6 +247,20 @@ void USB1_OTG_HS_IRQHandler(void)
   /* USER CODE BEGIN USB1_OTG_HS_IRQn 1 */
 
   /* USER CODE END USB1_OTG_HS_IRQn 1 */
+}
+
+/**
+  * @brief This function handles ETH1 global interrupt.
+  */
+void ETH1_IRQHandler(void)
+{
+  /* USER CODE BEGIN ETH1_IRQn 0 */
+
+  /* USER CODE END ETH1_IRQn 0 */
+  HAL_ETH_IRQHandler(&heth1);
+  /* USER CODE BEGIN ETH1_IRQn 1 */
+
+  /* USER CODE END ETH1_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

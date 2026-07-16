@@ -14,9 +14,11 @@
   </licenseSets>
 
   <releases>
-    <release version="1.1.1-dev">
+    <release version="1.2.0-dev">
       Active development ...
-      Layers: Added missing define (high-speed support)
+      Layers: 
+      - Added missing define (high-speed support)
+      - Added Ethernet support
     </release>
   </releases>
 

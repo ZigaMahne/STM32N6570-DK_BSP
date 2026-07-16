@@ -15,6 +15,7 @@ layer:
   connections:
     - connect: STM32N6570-DK Board
       provides:
+        - CMSIS_ETH
         - CMSIS_USB_Device
         - CMSIS_VIO
         - CMSIS_VSTREAM_AUDIO_IN
@@ -31,6 +32,7 @@ layer:
     - pack: Keil::STM32N6xx_DFP@^1.2.0-0
     - pack: Keil::STM32N6570-DK_BSP@^1.1.0-0
     - pack: ARM::CMSIS-Driver_STM32@^1.4.0-0
+    - pack: ARM::CMSIS-Driver@^2.11.0-0
     - pack: ARM::CMSIS@^6.2.0
     - pack: ARM::CMSIS-Compiler@^2.0.0
 
@@ -39,11 +41,13 @@ layer:
 
     - component: CMSIS:CORE
 
+    - component: CMSIS Driver:Ethernet MAC
     - component: CMSIS Driver:GPIO
     - component: CMSIS Driver:USART
     - component: CMSIS Driver:USB Device
     - component: CMSIS Driver:VIO:Board
     - component: CMSIS Driver:vStream:AudioIn
+    - component: CMSIS Driver:Ethernet PHY:RTL8211F
 
     - component: CMSIS-Compiler:CORE
     - component: CMSIS-Compiler:STDERR:Custom
